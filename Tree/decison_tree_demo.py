@@ -116,7 +116,7 @@ class Node:
 
     def predict(self, features):
         '''
-          features => 要預測的數據
+          features => data to predict
       '''
         if self.root is True:
             return self.label
@@ -129,7 +129,7 @@ class Dtree:
     '''
     def __init__(self, epsilon=0.1):
         self.epsilon = epsilon
-
+        self._tree = {}
     # ent
     @staticmethod
     def calc_ent(datasets):
@@ -140,7 +140,7 @@ class Dtree:
             if label not in label_count:
                 label_count[label] = 0
             label_count[label] += 1
-        ent = sum([(p / data_length) * log(p / data_length, 2)
+        ent = -sum([(p / data_length) * log(p / data_length, 2)
                    for p in label_count.values()])
         return ent
 
@@ -178,7 +178,7 @@ class Dtree:
 
     def train(self, train_data):
         '''
-        ch2
+        ch3
         input: dataset(DataFrame),feature set A, limit epc
         output: tree
         :param train_data:
@@ -192,7 +192,7 @@ class Dtree:
             return Node(root=True, label=y_train.iloc[0])
 
         # 2.若A為空,則T為單節點樹, 並將類Ck作為結點的類標記,返回T
-        if len(features == 0):
+        if len(features) == 0:
             return Node(root=True,
                         label=y_train.value_counts().sort_values(
                 ascending=False).index[0])
@@ -205,7 +205,7 @@ class Dtree:
         if max_info_gain < self.epsilon:
             return Node(
                 root=True,
-                label=y_train.value_counts.sort_values(ascending=False).index[0]
+                label=y_train.value_counts().sort_values(ascending=False).index[0]
             )
 
         #5.構建子集
