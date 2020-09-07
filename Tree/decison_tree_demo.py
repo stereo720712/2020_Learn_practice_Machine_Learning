@@ -103,7 +103,7 @@ class Node:
         self.tree = {}  # son node
         self.result = {
             'label': self.label,
-            'feature': self.feature,
+            'feature': self.feature_name,
             'tree': self.tree
         }
 

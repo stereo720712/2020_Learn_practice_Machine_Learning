@@ -2,55 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14862d00-b606-4fbe-b0fb-64d3787ec62e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/decison_tree_demo2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decison_tree_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/decison_tree_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$ml traing sean_detail.pptx" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_Ex_tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/decison_tree_demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="232" lean-forward="true" selection-start-line="232" selection-end-line="232" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/decison_tree_demo2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,41 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/iris_Ex_tree.py" />
-        <option value="$PROJECT_DIR$/decision_tree_demo.p.py" />
-        <option value="$PROJECT_DIR$/decison_tree_demo.py" />
-        <option value="$PROJECT_DIR$/decison_tree_demo2.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="937" />
-    <option name="y" value="211" />
-    <option name="width" value="1551" />
-    <option name="height" value="1318" />
-  </component>
+  <component name="ProjectId" id="1h3EAyX57nKER03CWqPQThv1fGl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tree" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -105,19 +36,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.decison_tree_demo2">
+  <component name="RunManager" selected="Python.decison_tree_demo">
     <configuration name="decison_tree_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tree" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,9 +44,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/opt/anaconda3/envs/p37_t15_ati/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -186,11 +105,23 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.decison_tree_demo" />
         <item itemvalue="Python.decison_tree_demo2" />
         <item itemvalue="Python.iris_Ex_tree" />
-        <item itemvalue="Python.decison_tree_demo" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -212,57 +143,50 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="24380000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="839" y="211" width="1551" height="1318" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08880053" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5269168" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31973898" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.36845592" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08880053" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32055464" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2634584" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.15904573" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="604" y="189" key="#decison_tree_demo" timestamp="1599231271375">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="604" y="189" key="#decison_tree_demo/0.23.1680.1027@0.23.1680.1027" timestamp="1599231271375" />
+    <state width="1659" height="366" key="GridCell.Tab.0.bottom" timestamp="1599241446594">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446594" />
+    <state width="1659" height="366" key="GridCell.Tab.0.center" timestamp="1599241446593">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446593" />
+    <state width="1659" height="366" key="GridCell.Tab.0.left" timestamp="1599241446593">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446593" />
+    <state width="1659" height="366" key="GridCell.Tab.0.right" timestamp="1599241446594">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1659" height="366" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446594" />
+    <state width="1197" height="211" key="GridCell.Tab.1.bottom" timestamp="1599241446584">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1197" height="211" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446584" />
+    <state width="1197" height="211" key="GridCell.Tab.1.center" timestamp="1599241446583">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1197" height="211" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446583" />
+    <state width="1197" height="211" key="GridCell.Tab.1.left" timestamp="1599241446583">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1197" height="211" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446583" />
+    <state width="1197" height="211" key="GridCell.Tab.1.right" timestamp="1599241446584">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1197" height="211" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1599241446584" />
+    <state x="586" y="407" key="com.intellij.ide.util.TipDialog" timestamp="1599231242598">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="586" y="407" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1599231242598" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -299,73 +223,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>246</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>247</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>204</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>205</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>211</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>216</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>217</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>218</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>221</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>222</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>224</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>228</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>191</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/decison_tree_demo.py</url>
-          <line>195</line>
-          <option name="timeStamp" value="43" />
+          <line>249</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -375,11 +234,6 @@
         <watch expression="y_traget" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Tree$decison_tree_demo2.coverage" NAME="decison_tree_demo2 Coverage Results" MODIFIED="1599206069229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Tree$decison_tree_demo.coverage" NAME="decison_tree_demo Coverage Results" MODIFIED="1599203102210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Tree$iris_Ex_tree.coverage" NAME="iris_Ex_tree Coverage Results" MODIFIED="1599204968018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -429,38 +283,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/decision_tree_demo.p.py" />
-    <entry file="file://$PROJECT_DIR$/decison_tree_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="232" lean-forward="true" selection-start-line="232" selection-end-line="232" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iris_Ex_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/decison_tree_demo2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
