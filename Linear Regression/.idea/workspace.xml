@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3109d3b1-981f-40b0-87e6-9aeb12d4c70e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/house_linear_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradient_decent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradient_decent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradient_decent/gradient_decent.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gradient_decent/gradient_decent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../polynomial_Regression/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../polynomial_Regression/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../polynomial_Regression/.idea/polynomial_Regression.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../polynomial_Regression/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../polynomial_Regression/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../polynomial_Regression/polynormial_regression.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,21 +144,22 @@
       <updated>1599270735704</updated>
       <workItem from="1599270737254" duration="6310000" />
       <workItem from="1599448185323" duration="3806000" />
+      <workItem from="1599524155226" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10116000" />
+    <option name="totallyTimeSpent" value="10177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1225" y="151" width="1229" height="1116" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.109519795" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11120472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32910156" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32910156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39941406" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
