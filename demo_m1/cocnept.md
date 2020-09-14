@@ -9,6 +9,7 @@
 ## How use in Fa 
 -- fa proble~ defin~.
 -- wha~ we to fo~ fa.
+--fa demo
 
 ## other progressing for me now ~detail ppt un managering~
 
