@@ -14,7 +14,7 @@
 
 ## what is next
 -- NN net introduce
--- NN use for fa  ~10 end~
+-- NN use for fa  10~ end~
 -- 11 algorithm data manage
 
 
