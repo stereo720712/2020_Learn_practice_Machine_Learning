@@ -21,7 +21,7 @@ from matplotlib import pyplot as plt
 
 
 for dirname, _, filenames in os.walk(
-        '../bbc-full-text-document-classification/bbc-fulltext (document classification)/bbc/'):
+        '../bbc_news_Data/bbc-fulltext (document classification)/bbc/'):
     # for filename in filenames:
     # print(os.path.join(dirname,filename))
     pass
@@ -98,15 +98,15 @@ import os
 os.makedirs('classify', exist_ok=True)
 os.makedirs('classify/model', exist_ok=True)
 os.makedirs('classify/data', exist_ok=True)
-train.to_csv('classify/data/train.csv')
-dev.to_csv('classify/data/dev.csv')
-test.to_csv('classify/data/test.csv')
+train.to_csv('./classify/data/train.csv')
+dev.to_csv('./classify/data/dev.csv')
+test.to_csv('./classify/data/test.csv')
 
 from flair.data import Corpus
 from flair.datasets import CSVClassificationCorpus
 
 # this is the folder in which train , test  and dev files reside
-data_folder = 'classify/data'
+data_folder = './classify/data'
 
 # column format indicating which columns hold the next labels
 column_name_map = {2: 'text', 1: 'label'}
@@ -128,35 +128,35 @@ document_embeddings = TransformerDocumentEmbeddings('distilbert-base-uncased', f
 
 classifier = TextClassifier(document_embeddings, label_dictionary=label_dict)
 trainer = ModelTrainer(classifier, corpus, optimizer=Adam)
-trainer.train('classify/model',
-              learning_rate=3e-5,
-              mini_batch_size=16,
-              mini_batch_chunk_size=4,  # # optionally set this if transformer is too much for your machine
-              max_epochs=2 # original is 5
-              )
+# trainer.train('classify/model',
+#               learning_rate=3e-5,
+#               mini_batch_size=16,
+#               mini_batch_chunk_size=4,  # # optionally set this if transformer is too much for your machine
+#               max_epochs=2 # original is 5
+#               )
 
 from flair.visual.training_curves import Plotter
-
-plotter = Plotter()
-plotter.plot_training_curves('classify/model/loss.tsv')
-
-from flair.nn import Model
-
-model = TextClassifier.load('classify/model/final-model.pt')
-result = model.predict(corpus.test)
-
-y_test = []
-y_pred = []
-for r in result:
-    y_test.append(r.labels[0].value)
-    y_pred.append(r.labels[1].value)
-
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-
-labels = label_dict.get_items()
-cm = confusion_matrix(y_true=y_test, y_pred=y_pred, labels=labels, normalize='true')
-cm_display = ConfusionMatrixDisplay(cm, display_labels=labels).plot()
-
+#
+# plotter = Plotter()
+# plotter.plot_training_curves('./classify/model/loss.tsv')
+#
+# from flair.nn import Model
+#
+# model = TextClassifier.load('./classify/model/final-model.pt')
+# result = model.predict(corpus.test)
+#
+# y_test = []
+# y_pred = []
+# for r in result:
+#     y_test.append(r.labels[0].value)
+#     y_pred.append(r.labels[1].value)
+#
+# from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+#
+# labels = label_dict.get_items()
+# cm = confusion_matrix(y_true=y_test, y_pred=y_pred, labels=labels, normalize='true')
+# cm_display = ConfusionMatrixDisplay(cm, display_labels=labels).plot()
+#
 
 # eda
 '''
