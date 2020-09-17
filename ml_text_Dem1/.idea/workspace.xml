@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ans2/ans2_Source.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answer4/BBC Classification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answer5/text_class_ml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/ans2_flair.py" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/ans2_flair.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/classify/data/dev.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/classify/data/dev.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/classify/data/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/classify/data/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/classify/data/train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/classify/data/train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" beforeDir="false" afterPath="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="355">
+              <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
               <folding>
                 <element signature="e#59#77#0" expanded="true" />
               </folding>
@@ -95,8 +87,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="925" />
-    <option name="y" value="62" />
+    <option name="x" value="1113" />
+    <option name="y" value="80" />
     <option name="width" value="1628" />
     <option name="height" value="1068" />
   </component>
@@ -298,15 +290,16 @@
       <updated>1600130347240</updated>
       <workItem from="1600130353584" duration="137000" />
       <workItem from="1600237820111" duration="19743000" />
-      <workItem from="1600327327210" duration="5687000" />
+      <workItem from="1600327327210" duration="6262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25569000" />
+    <option name="totallyTimeSpent" value="26144000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="925" y="62" width="1628" height="1068" extended-state="0" />
+    <frame x="1113" y="80" width="1628" height="1068" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66773677" visible="true" weight="0.24401009" />
       <window_info id="Structure" order="1" sideWeight="0.33226323" side_tool="true" visible="true" weight="0.24401009" />
@@ -576,8 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="355">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
           <folding>
             <element signature="e#59#77#0" expanded="true" />
           </folding>

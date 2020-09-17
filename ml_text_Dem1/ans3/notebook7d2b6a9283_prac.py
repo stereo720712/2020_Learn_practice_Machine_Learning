@@ -116,3 +116,12 @@ for i, j in enumerate(vals):
 
 plt.title("Maximum occurance of word in title")
 plt.show()
+
+categories = defaultdict(list)
+for i in df['categories'].unique():
+    temp = df[df['catefories']==i]['article'].str.split().apply(len).values
+    categories[i]= temp
+
+plt.boxplot(categories.values())
+plt.xticks(range(5), categories.keys())
+plt.show()
