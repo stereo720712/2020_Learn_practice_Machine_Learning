@@ -90,9 +90,9 @@ print(df.head())
 
 wordlength = dict(df['title'].str.split().apply(len).value_counts())
 plt.bar(list(wordlength.keys()), list(wordlength.values()))
-plt.xlabel('length of word document')
+plt.xlabel('length of word title')
 plt.ylabel('Documents  Count')
-plt.title('Number of words in each document')
+plt.title('Number of words in each title')
 plt.show()
 
 import nltk
@@ -119,9 +119,69 @@ plt.show()
 
 categories = defaultdict(list)
 for i in df['categories'].unique():
-    temp = df[df['catefories']==i]['article'].str.split().apply(len).values
+    temp = df[ df['categories'] == i ]['article'].str.split().apply(len).values
     categories[i]= temp
-
+# ========================================????
 plt.boxplot(categories.values())
 plt.xticks(range(5), categories.keys())
 plt.show()
+
+
+for i in categories.keys():
+    plt.plot(categories[i])
+    plt.title(i)
+    plt.show()
+
+
+# i think no ok
+def Clean(text):
+    text = text.split()
+    text = [i.lower() for i in text if i.lower() not in stopwords.words('english')]
+    text = ' '.join(text)
+    text = re.sub('[^A-Za-z0-9]]+'',', ' ', text)
+    text = text.lower()
+    return text
+
+print(df.head(1))
+df['article'] = df['article'].apply(lambda x:Clean(x))
+print(df.head(1))
+
+
+
+#label encoding
+from sklearn.preprocessing import LabelEncoder
+l_enc = LabelEncoder()
+
+df['categories'] = l_enc.fit_transform(df['categories'])
+#df.head()
+
+# word vector
+from sklearn.feature_extraction.text import TfidfVectorizer
+tfidf = TfidfVectorizer()
+X = tfidf.fit_transform(df['article'])
+y = df['categories']
+
+from sklearn.model_selection import  train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import MultinomialNB
+from xgboost import XGBClassifier #!!!!!!!!!!!!
+from sklearn.svm import SVC
+from sklearn.linear_model import PassiveAggressiveClassifier
+
+models = [LogisticRegression(), RandomForestClassifier(), DecisionTreeClassifier(),
+          MultinomialNB(), XGBClassifier(), SVC(), PassiveAggressiveClassifier()]
+scores = pd.DataFrame({'Model':[], 'Train_Score':[], 'Test_Score':[]})
+for j, i in enumerate(models):
+    i.fit(X_train, y_train)
+    #i.save_model()
+    scores.loc[j,:] = [i, i.score(X_train, y_train), i.score(X_test, y_test)]
+
+print(scores)
+
+
+
+
