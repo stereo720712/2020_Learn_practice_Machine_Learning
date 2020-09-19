@@ -30,8 +30,12 @@ from nltk.corpus import stopwords
 import re
 from tqdm import tqdm
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from sklearn.preprocessing import  LabelEncoder
-from scipy.sparse import  hstack
+from sklearn.preprocessing import LabelEncoder
+from scipy.sparse import hstack
+
+from sklearn.model_selection import  train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix
+from sklearn import linear_model, naive_bayes, svm
 data_dir = '../bbc_news_Data/bbc-fulltext (document classification)/bbc/'
 CATEGORY = 'category'
 DOCUMENT_ID = 'document_id'
@@ -133,7 +137,7 @@ plt.boxplot(cat_titles_word_count.values())
 keys = cat_titles_word_count.keys()
 plt.xticks([i+1 for i in range(len(keys))], keys)
 plt.ylabel('Word in document title')
-plt.gird()
+plt.grid()
 plt.show()
 
 '''
@@ -170,7 +174,7 @@ plt.show()
 
 # distribution of words in story
 fig, axes = plt.subplots(2, 3, figsize=(17,9), sharey=True)
-ax = axes.flattern()
+ax = axes.flatten()
 plt.suptitle('Distribution of words in story')
 for idx, (key, value) in enumerate(category_story_word_count.items()):
     sns.kdeplot(value, label=key, bw=0.6, ax=ax[idx])
@@ -277,7 +281,7 @@ print('Story Shape after one hot encoding', story_bow.shape)
 
 vectorizer = TfidfVectorizer(min_df=10)
 story_tfidf = vectorizer.fit_transform(processed_stories)
-print('Story tfidf Shape after one hot encoding', story_tidf.shape)
+print('Story tfidf Shape after one hot encoding', story_tfidf.shape)
 
 vectorizer = TfidfVectorizer(analyzer = "word", ngram_range =(1, 4),max_features = 7500, min_df=10)
 story_tfidf_ngram = vectorizer.fit_transform(processed_stories)
@@ -302,9 +306,85 @@ X_ngram = hstack((title_tfidf_ngram, story_tfidf_ngram))
 print(X_bow.shape, X_tfidf.shape, X_ngram.shape)
 print(type(category_onehot), type(X_bow))
 
-#
+# Data Mdoeling
+
+def show_confusion_matrix(prediction, y_test):
+    # https://stackoverflow.com/a/48018785/7445772
+    labels = ['tech','sport', 'business','entertainment','politics']
+    cm = confusion_matrix(y_test, prediction, idx) #?? idx ?
+    print(cm)
+    ax = plt.subplot()
+    sns.heatmap(cm, annot=True, ax=ax)  #annot=True to annotate cells
+    # labels, title and ticks
+    ax.set_xlabel('Predicted labels');
+    ax.set_ylabel('True labels');
+    ax.set_title('Confusion Matrix');
+    ax.xaxis.set_ticklabels(labels, rotation=90);
+    ax.yaxis.set_ticklabels(labels[::-1], rotation=90);
+    plt.title('Confusion matrix of the classifier')
+    plt.show()
+
+
+# Use bow vectors
+X = X_bow.toarray()
+y = category_onehot
+print(X.shape, y.shape)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,
+                                                    random_state=9)
+
+model = linear_model.LogisticRegression()
+model.fit(X_train, y_train)
+LR_prediction = model.predict(X_test)
+
+model = naive_bayes.MultinomialNB()
+model.fit(X_train,y_train)
+NB_prediction = model.predict(X_test)
+
+model = svm.SVC()
+model.fit(X_train,y_train)
+SVM_prediction = model.predict(X_test)
 
 
 
+print('Accuracy with BOW vectors \n'+'-'*15)
+print(f'Using Logistic regression:{accuracy_score(LR_prediction,y_test)}')
+print(f'Using Naive Bayes:{ accuracy_score(NB_prediction, y_test)}')
+print(f'Using Support Vector Machines : {accuracy_score(SVM_prediction, y_test)}')
+show_confusion_matrix(LR_prediction, y_test)
+show_confusion_matrix(NB_prediction, y_test)
+show_confusion_matrix(SVM_prediction, y_test)
 
 
+
+# Using TFIDF vectors      ---copy paste , i not wrirte,  the confsuon_matrix
+# have problem from source code
+X = X_tfidf.toarray()
+y = category_onehot
+print(X.shape, y.shape)
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y,test_size = 0.2, random_state=9)
+
+model = linear_model.LogisticRegression()
+model.fit(X_train,y_train)
+LR_prediction = model.predict(X_test)
+
+model = naive_bayes.MultinomialNB()
+model.fit(X_train,y_train)
+NB_prediction = model.predict(X_test)
+
+model = svm.SVC()
+model.fit(X_train,y_train)
+SVM_prediction = model.predict(X_test)
+
+print('Accuracy with TF IDF vectors \n'+'-'*15)
+print(f'Using Logistic regression : {accuracy_score(LR_prediction, y_test)}')
+print(f'Using Naive Bayes : {accuracy_score(NB_prediction, y_test)}')
+print(f'Using Support Vector Machines : {accuracy_score(SVM_prediction, y_test)}')
+show_confusion_matrix(LR_prediction, y_test)
+show_confusion_matrix(NB_prediction, y_test)
+show_confusion_matrix(SVM_prediction, y_test)
+
+# tfidf ngram vector
