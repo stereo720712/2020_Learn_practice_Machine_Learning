@@ -312,7 +312,7 @@ print("Category Shape after one hot encoding : ",category_onehot.shape)
 ## preparing target
 
 X_bow = hstack((title_bow, story_bow))
-X_tfidf =  hstack((title_tfidf, story_tfidf))
+X_tfidf = hstack((title_tfidf, story_tfidf))
 X_ngram = hstack((title_tfidf_ngram, story_tfidf_ngram))
 print(X_bow.shape, X_tfidf.shape, X_ngram.shape)
 print(type(category_onehot), type(X_bow))
@@ -379,9 +379,9 @@ print(X.shape, y.shape)
 X_train, X_test, y_train, y_test = train_test_split(X, y,test_size = 0.2, random_state=9)
 
 model = linear_model.LogisticRegression(max_iter=500)
-model.fit(X_train,y_train)
+#model.fit(X_train,y_train)
 #joblib.dump(model, 'LR_model')
-# LR_prediction = model.predict(X_test)
+#LR_prediction = model.predict(X_test)
 #
 # model = naive_bayes.MultinomialNB()
 # model.fit(X_train,y_train)
@@ -407,9 +407,25 @@ with open('./varify.txt', 'r', encoding='unicode_escape') as file:
 vdf = pd.DataFrame.from_dict(vframe)
 
 vstories = []
-for story in tqdm(vdf[STORY].values):
+for story in tqdm(vdf['text'].values):
     text = clean_text(story)
     vstories.append(text)
-vectorizer = TfidfVectorizer(min_df=10)
-testv = vectorizer.fit_transform(vstories)
+text = vdf['text'].str.split('\n', n=1, expand=True)
+vdf[TITLE] = text[0]
+vdf[STORY] = text[1]
+processed_titles_ver = []
+for title in tqdm(vdf[TITLE].values):
+    processed_title = clean_text(title)
+    processed_titles_ver.append(proecessed_title)
+processed_stories_ver = []
+for story in tqdm(vdf[STORY].values):
+    processed_story = clean_text(story)
+    processed_stories_ver.append(processed_story)
 
+vectorizer =TfidfVectorizer()
+title_tfidf = vectorizer.fit_transform(processed_titles_ver)
+
+vectorizer = TfidfVectorizer()
+story_tfidf = vectorizer.fit_transform(processed_stories_ver)
+X_tfidf =  hstack((title_tfidf, story_tfidf))
+X = X_tfidf.toarray()
