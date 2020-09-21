@@ -36,6 +36,8 @@ from scipy.sparse import hstack
 from sklearn.model_selection import  train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn import linear_model, naive_bayes, svm
+
+import joblib
 data_dir = '../bbc_news_Data/bbc-fulltext (document classification)/bbc/'
 CATEGORY = 'category'
 DOCUMENT_ID = 'document_id'
@@ -49,7 +51,7 @@ frame = defaultdict(list)
 for dir_name, _ , file_names in os.walk(data_dir):
 
     try:
-        # file_names.remove('README.TXT')
+        #file_names.remove('README.TXT')
         file_names.remove('.DS_Store')
     except:
         pass
@@ -108,8 +110,17 @@ df[STORY] = text[1]
 print(df.head(2))
 
 # Univariate Analysis - Category
-sns.countplot(df.category)
-plt.title('Number of documents in each  category')
+ax = sns.countplot(df.category)
+title_obj = plt.title('Number of documents in each  category')
+#
+# ax.xaxis.label.set_color("green")
+# ax.tick_params(axis='x', colors='green')
+# ax.yaxis.label.set_color("green")
+# ax.tick_params(axis='y', colors='green')
+# plt.getp(title_obj)                    #print out the properties of title
+# plt.getp(title_obj, 'text')            #print out the 'text' property for title
+# plt.setp(title_obj, color='g')         #set the color of title to red
+# plt.savefig('category.png')
 plt.show()
 
 # Univariate Analysis Title
@@ -161,7 +172,7 @@ plt.show()
 category_story_word_count = defaultdict(list)
 for category in df.category.unique():
     val = df[df[CATEGORY]==category][STORY].str.split().apply(len).values
-    category_story_word_count[CATEGORY] = val
+    category_story_word_count[category] = val
 
 # distribution of stories across categories
 plt.boxplot(category_story_word_count.values())
@@ -173,7 +184,7 @@ plt.grid()
 plt.show()
 
 # distribution of words in story
-fig, axes = plt.subplots(2, 3, figsize=(17,9), sharey=True)
+fig, axes = plt.subplots(2, 3, figsize=(15,8), sharey=True)
 ax = axes.flatten()
 plt.suptitle('Distribution of words in story')
 for idx, (key, value) in enumerate(category_story_word_count.items()):
@@ -333,27 +344,27 @@ print(X.shape, y.shape)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,
                                                     random_state=9)
 
-model = linear_model.LogisticRegression()
-model.fit(X_train, y_train)
-LR_prediction = model.predict(X_test)
+model = linear_model.LogisticRegression(max_iter=400)
+# model.fit(X_train, y_train)
+# LR_prediction = model.predict(X_test)
+#
+# model = naive_bayes.MultinomialNB()
+# model.fit(X_train,y_train)
+# NB_prediction = model.predict(X_test)
+#
+# model = svm.SVC()
+# model.fit(X_train,y_train)
+# SVM_prediction = model.predict(X_test)
 
-model = naive_bayes.MultinomialNB()
-model.fit(X_train,y_train)
-NB_prediction = model.predict(X_test)
-
-model = svm.SVC()
-model.fit(X_train,y_train)
-SVM_prediction = model.predict(X_test)
 
 
-
-print('Accuracy with BOW vectors \n'+'-'*15)
-print(f'Using Logistic regression:{accuracy_score(LR_prediction,y_test)}')
-print(f'Using Naive Bayes:{ accuracy_score(NB_prediction, y_test)}')
-print(f'Using Support Vector Machines : {accuracy_score(SVM_prediction, y_test)}')
-show_confusion_matrix(LR_prediction, y_test)
-show_confusion_matrix(NB_prediction, y_test)
-show_confusion_matrix(SVM_prediction, y_test)
+# print('Accuracy with BOW vectors \n'+'-'*15)
+# print(f'Using Logistic regression:{accuracy_score(LR_prediction,y_test)}')
+# print(f'Using Naive Bayes:{ accuracy_score(NB_prediction, y_test)}')
+# print(f'Using Support Vector Machines : {accuracy_score(SVM_prediction, y_test)}')
+# show_confusion_matrix(LR_prediction, y_test)
+# show_confusion_matrix(NB_prediction, y_test)
+# show_confusion_matrix(SVM_prediction, y_test)
 
 
 
@@ -367,24 +378,38 @@ print(X.shape, y.shape)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,test_size = 0.2, random_state=9)
 
-model = linear_model.LogisticRegression()
+model = linear_model.LogisticRegression(max_iter=500)
 model.fit(X_train,y_train)
-LR_prediction = model.predict(X_test)
+#joblib.dump(model, 'LR_model')
+# LR_prediction = model.predict(X_test)
+#
+# model = naive_bayes.MultinomialNB()
+# model.fit(X_train,y_train)
+# NB_prediction = model.predict(X_test)
+#
+# model = svm.SVC()
+# model.fit(X_train,y_train)
+# SVM_prediction = model.predict(X_test)
 
-model = naive_bayes.MultinomialNB()
-model.fit(X_train,y_train)
-NB_prediction = model.predict(X_test)
-
-model = svm.SVC()
-model.fit(X_train,y_train)
-SVM_prediction = model.predict(X_test)
-
-print('Accuracy with TF IDF vectors \n'+'-'*15)
-print(f'Using Logistic regression : {accuracy_score(LR_prediction, y_test)}')
-print(f'Using Naive Bayes : {accuracy_score(NB_prediction, y_test)}')
-print(f'Using Support Vector Machines : {accuracy_score(SVM_prediction, y_test)}')
-show_confusion_matrix(LR_prediction, y_test)
-show_confusion_matrix(NB_prediction, y_test)
-show_confusion_matrix(SVM_prediction, y_test)
+# print('Accuracy with TF IDF vectors \n'+'-'*15)
+# print(f'Using Logistic regression : {accuracy_score(LR_prediction, y_test)}')
+# print(f'Using Naive Bayes : {accuracy_score(NB_prediction, y_test)}')
+# print(f'Using Support Vector Machines : {accuracy_score(SVM_prediction, y_test)}')
+# show_confusion_matrix(LR_prediction, y_test)
+# show_confusion_matrix(NB_prediction, y_test)
+# show_confusion_matrix(SVM_prediction, y_test)
 
 # tfidf ngram vector
+vframe = defaultdict(list)
+
+with open('./varify.txt', 'r', encoding='unicode_escape') as file:
+    vframe['text'].append(file.read())
+vdf = pd.DataFrame.from_dict(vframe)
+
+vstories = []
+for story in tqdm(vdf[STORY].values):
+    text = clean_text(story)
+    vstories.append(text)
+vectorizer = TfidfVectorizer(min_df=10)
+testv = vectorizer.fit_transform(vstories)
+

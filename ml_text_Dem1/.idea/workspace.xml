@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="" />
+    <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Linear Regression/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Linear Regression/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradient_decent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradient_decent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" beforeDir="false" afterPath="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/answer4/BBC Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer4/BBC Classification.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ans2/ans2_flair.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="69" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="625">
+              <caret line="178" column="20" lean-forward="true" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -42,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+            <state relative-caret-position="347">
+              <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="55" />
               <folding>
                 <element signature="e#59#77#0" expanded="true" />
               </folding>
@@ -51,25 +56,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="377" column="17" lean-forward="true" selection-start-line="377" selection-start-column="17" selection-end-line="377" selection-end-column="17" />
+            <state relative-caret-position="341">
+              <caret line="106" selection-start-line="106" selection-end-line="108" selection-end-column="19" />
               <folding>
                 <element signature="e#459#477#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/answer5/text_class_ml.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
-              <folding>
-                <element signature="e#75#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,10 +82,13 @@
       <find>wordc</find>
       <find>ImageColorGenerator</find>
       <find>open</find>
-      <find>stopwords</find>
       <find>idx</find>
       <find>flattern</find>
       <find>story_tidf</find>
+      <find>show_confusion_matrix</find>
+      <find>stopwords</find>
+      <find>X_tfidf</find>
+      <find>frame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,15 +102,15 @@
         <option value="$PROJECT_DIR$/ans2/ans2_fair_source.py" />
         <option value="$PROJECT_DIR$/ans2/ans2_flair.py" />
         <option value="$PROJECT_DIR$/ans2/ans2_Source.py" />
+        <option value="$PROJECT_DIR$/answer5/text_class_ml.py" />
         <option value="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" />
         <option value="$PROJECT_DIR$/answer4/BBC Classification.py" />
-        <option value="$PROJECT_DIR$/answer5/text_class_ml.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="969" />
-    <option name="y" value="243" />
+    <option name="x" value="1084" />
+    <option name="y" value="84" />
     <option name="width" value="1517" />
     <option name="height" value="1068" />
   </component>
@@ -187,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text_class_ml">
+  <component name="RunManager" selected="Python.BBC Classification">
     <configuration name="BBC Classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,20 +225,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ans2_Source" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ans1_nb_lr_rf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ans2/ans2_Source.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ans1/ans1_nb_lr_rf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -255,9 +248,6 @@
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans2" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -277,9 +267,6 @@
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans3" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -299,6 +286,9 @@
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/answer5" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -316,11 +306,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.text_class_ml" />
         <item itemvalue="Python.BBC Classification" />
         <item itemvalue="Python.notebook7d2b6a9283_prac" />
-        <item itemvalue="Python.ans2_Source" />
         <item itemvalue="Python.ans2_flair" />
+        <item itemvalue="Python.ans1_nb_lr_rf" />
+        <item itemvalue="Python.text_class_ml" />
       </list>
     </recent_temporary>
   </component>
@@ -339,23 +329,24 @@
       <workItem from="1600327327210" duration="6294000" />
       <workItem from="1600390001082" duration="18143000" />
       <workItem from="1600475739627" duration="5410000" />
+      <workItem from="1600655230459" duration="9846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49729000" />
+    <option name="totallyTimeSpent" value="59575000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="969" y="243" width="1517" height="1068" extended-state="0" />
+    <frame x="1084" y="84" width="1517" height="1068" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66547406" visible="true" weight="0.21423729" />
-      <window_info id="Structure" order="1" sideWeight="0.33452594" side_tool="true" visible="true" weight="0.21423729" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66292137" visible="true" weight="0.21694915" />
+      <window_info id="Structure" order="1" sideWeight="0.33707866" side_tool="true" visible="true" weight="0.21694915" />
       <window_info id="Favorites" order="2" sideWeight="0.50086653" side_tool="true" weight="0.10752688" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329849" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8246515" weight="0.36168033" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.82237285" visible="true" weight="0.36168033" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -363,13 +354,13 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329849" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329849" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.85694915" visible="true" weight="0.4272541" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.14305085" side_tool="true" visible="true" weight="0.4272541" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.85491526" weight="0.4272541" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.17762712" side_tool="true" visible="true" weight="0.36168033" />
       <window_info anchor="right" x="0" y="0" width="262" height="698" id="Documentation" order="0" sideWeight="0.6982344" side_tool="true" weight="0.31768158" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="4" sideWeight="0.30176565" visible="true" weight="0.14576271" />
+      <window_info active="true" anchor="right" id="SciView" order="4" sideWeight="0.30176565" visible="true" weight="0.22644068" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297604" />
     </layout>
   </component>
@@ -485,19 +476,14 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
-          <line>88</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py</url>
           <line>182</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>294</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -510,12 +496,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df.head(1)" />
-        <watch expression="values" />
-        <watch expression="values[DOCUMENT_ID]" />
-        <watch expression="values['document_id']" language="Python" />
-        <watch expression="df" />
-        <watch expression="frame" />
+        <watch expression="dfv" />
       </configuration>
     </watches-manager>
   </component>
@@ -524,7 +505,7 @@
     <SUITE FILE_PATH="coverage/ml_text_Dem1$ans2_Source.coverage" NAME="ans2_Source Coverage Results" MODIFIED="1600322124353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans2" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$notebook7d2b6a9283_prac.coverage" NAME="notebook7d2b6a9283_prac Coverage Results" MODIFIED="1600415241007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans3" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$ans2_fair_source.coverage" NAME="ans2_fair_source Coverage Results" MODIFIED="1600308888354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans1" />
-    <SUITE FILE_PATH="coverage/ml_text_Dem1$BBC_Classification.coverage" NAME="BBC Classification Coverage Results" MODIFIED="1600398894684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/answer4" />
+    <SUITE FILE_PATH="coverage/ml_text_Dem1$BBC_Classification.coverage" NAME="BBC Classification Coverage Results" MODIFIED="1600675605218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/answer4" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -535,6 +516,11 @@
       </expression>
     </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>story_tfidf[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>values['document_id']</expression-string>
         <language-id>Python</language-id>
@@ -593,17 +579,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/answer5/text_class_ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
+          <folding>
+            <element signature="e#75#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ans1/ans1_nb_lr_rf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-429">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="e#133#144#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ans2/ans2_flair.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="69" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="625">
+          <caret line="178" column="20" lean-forward="true" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -612,8 +611,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        <state relative-caret-position="347">
+          <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="55" />
           <folding>
             <element signature="e#59#77#0" expanded="true" />
           </folding>
@@ -622,20 +621,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="377" column="17" lean-forward="true" selection-start-line="377" selection-start-column="17" selection-end-line="377" selection-end-column="17" />
+        <state relative-caret-position="341">
+          <caret line="106" selection-start-line="106" selection-end-line="108" selection-end-column="19" />
           <folding>
             <element signature="e#459#477#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/answer5/text_class_ml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
-          <folding>
-            <element signature="e#75#86#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import os
 import glob
 import random
+from collections import defaultdict
 
 data_rootPath = '../bbc_news_Data'
 dataPath = '../bbc_news_Data/bbc-fulltext (document classification)/bbc/'
@@ -24,14 +25,13 @@ dataPath = '../bbc_news_Data/bbc-fulltext (document classification)/bbc/'
 #print(os.listdir(dataPath))
 
 #--------------------------------------------------------
-from collections import defaultdict
 
 dicts = defaultdict(list)
 
 for dir_name, _, file_names in os.walk(dataPath):
 
     try:
-        #file_names.remove('README.TXT')
+        file_names.remove('README.TXT')
         file_names.remove('.DS_Store')
     except:
         pass

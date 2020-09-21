@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f19c61c-9f91-4372-a5cf-53c6a0d1a175" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Logic_regrssion/loss_prac.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Logic_regrssion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Logic_regrssion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Linear Regression/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Linear Regression/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +11,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gradient_decent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -166,16 +175,18 @@
       <workItem from="1599529335161" duration="2018000" />
       <workItem from="1599553820991" duration="152000" />
       <workItem from="1599618049590" duration="563000" />
+      <workItem from="1600655023111" duration="72000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9106000" />
+    <option name="totallyTimeSpent" value="9178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="584" y="91" width="1976" height="1175" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.111685626" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11271975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
