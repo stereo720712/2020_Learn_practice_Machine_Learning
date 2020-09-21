@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer4/BBC Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer4/BBC Classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer5/text_class_ml.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer5/text_class_ml.py" afterDir="false" />
-    </list>
+    <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,12 +338,12 @@
       <workItem from="1600237820111" duration="19743000" />
       <workItem from="1600327327210" duration="6294000" />
       <workItem from="1600390001082" duration="18143000" />
-      <workItem from="1600475739627" duration="5273000" />
+      <workItem from="1600475739627" duration="5410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49592000" />
+    <option name="totallyTimeSpent" value="49729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="969" y="243" width="1517" height="1068" extended-state="0" />
