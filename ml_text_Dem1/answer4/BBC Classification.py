@@ -314,6 +314,7 @@ print("Category Shape after one hot encoding : ",category_onehot.shape)
 X_bow = hstack((title_bow, story_bow))
 X_tfidf = hstack((title_tfidf, story_tfidf))
 X_ngram = hstack((title_tfidf_ngram, story_tfidf_ngram))
+
 print(X_bow.shape, X_tfidf.shape, X_ngram.shape)
 print(type(category_onehot), type(X_bow))
 
@@ -429,3 +430,9 @@ vectorizer = TfidfVectorizer()
 story_tfidf = vectorizer.fit_transform(processed_stories_ver)
 X_tfidf =  hstack((title_tfidf, story_tfidf))
 X = X_tfidf.toarray()
+
+
+model = linear_model.LogisticRegression(max_iter=500)
+#model.fit(X_train ,y_train)
+#joblib.dump(model, 'LR_model')
+model = joblib.load('./model/LR_model')
