@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FA_DEMO3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FA_DEMO2.py" beforeDir="false" afterPath="$PROJECT_DIR$/FA_DEMO2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/answer4/BBC Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer4/BBC Classification.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,28 +27,58 @@
     <expand />
     <select />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/FA_DEMO3.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="298">
+                    <caret line="98" column="3" lean-forward="true" selection-start-line="98" selection-end-line="98" selection-end-column="12" />
+                    <folding>
+                      <element signature="e#40#49#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="3">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="100">
+                    <caret line="321" column="25" selection-start-line="321" selection-start-column="25" selection-end-line="321" selection-end-column="25" />
+                    <folding>
+                      <element signature="e#459#477#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ml_text_Dem1" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5287">
-              <caret line="311" column="19" selection-start-line="311" selection-start-column="19" selection-end-line="311" selection-end-column="19" />
-              <folding>
-                <element signature="e#459#477#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FA_DEMO2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="310">
+              <caret line="119" selection-start-line="119" selection-end-line="119" />
               <folding>
                 <element signature="e#36#45#0" expanded="true" />
               </folding>
@@ -56,32 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ans2/ans2_flair.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3740">
+            <state relative-caret-position="882">
               <caret line="220" selection-start-line="220" selection-end-line="220" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ans1/ans1_nb_lr_rf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-              <folding>
-                <element signature="e#133#144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/answer4/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -114,6 +123,7 @@
       <find>CATEGORY</find>
       <find>stopword</find>
       <find>apply</find>
+      <find>stopword_e</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,15 +139,16 @@
         <option value="$PROJECT_DIR$/answer5/text_class_ml.py" />
         <option value="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" />
         <option value="$PROJECT_DIR$/answer4/test.py" />
-        <option value="$PROJECT_DIR$/answer4/BBC Classification.py" />
         <option value="$PROJECT_DIR$/ans2/ans2_flair.py" />
+        <option value="$PROJECT_DIR$/answer4/BBC Classification.py" />
+        <option value="$PROJECT_DIR$/FA_DEMO3.py" />
         <option value="$PROJECT_DIR$/FA_DEMO2.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="629" />
-    <option name="y" value="232" />
+    <option name="x" value="1018" />
+    <option name="y" value="82" />
     <option name="width" value="1517" />
     <option name="height" value="1016" />
   </component>
@@ -147,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,6 +194,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,6 +266,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="FA_DEMO3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ml_text_Dem1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FA_DEMO3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -277,7 +310,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ans2_flair" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ans1_nb_lr_rf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ml_text_Dem1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -285,34 +318,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ans2/ans2_flair.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="notebook7d2b6a9283_prac" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ml_text_Dem1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ans3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ans1/ans1_nb_lr_rf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,10 +357,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.FA_DEMO2" />
+        <item itemvalue="Python.FA_DEMO3" />
         <item itemvalue="Python.BBC Classification" />
+        <item itemvalue="Python.ans1_nb_lr_rf" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.notebook7d2b6a9283_prac" />
-        <item itemvalue="Python.ans2_flair" />
       </list>
     </recent_temporary>
   </component>
@@ -372,24 +383,24 @@
       <workItem from="1600733214012" duration="3915000" />
       <workItem from="1601252832358" duration="7995000" />
       <workItem from="1601284512049" duration="274000" />
-      <workItem from="1601284974463" duration="384000" />
+      <workItem from="1601284974463" duration="430000" />
+      <workItem from="1601339785963" duration="4525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74183000" />
+    <option name="totallyTimeSpent" value="78754000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="629" y="232" width="1517" height="1016" extended-state="0" />
-    <editor active="true" />
+    <frame x="1018" y="82" width="1517" height="1016" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6551724" visible="true" weight="0.22779661" />
-      <window_info id="Structure" order="1" sideWeight="0.3448276" side_tool="true" visible="true" weight="0.22779661" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.653144" visible="true" weight="0.23050848" />
+      <window_info id="Structure" order="1" sideWeight="0.346856" side_tool="true" visible="true" weight="0.23050848" />
       <window_info id="Favorites" order="2" sideWeight="0.50086653" side_tool="true" weight="0.10752688" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329849" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.82033896" weight="0.4664502" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.819661" visible="true" weight="0.4664502" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -398,12 +409,12 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329849" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329849" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.85423726" weight="0.4272541" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.17966102" side_tool="true" visible="true" weight="0.4664502" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.18033898" side_tool="true" visible="true" weight="0.4664502" />
       <window_info anchor="right" x="0" y="0" width="262" height="698" id="Documentation" order="0" sideWeight="0.6982344" side_tool="true" weight="0.31768158" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" sideWeight="0.30176565" visible="true" weight="0.15186441" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.30176565" visible="true" weight="0.17288135" />
       <window_info anchor="right" id="Database" order="5" weight="0.3297604" />
     </layout>
   </component>
@@ -525,7 +536,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
-          <line>431</line>
+          <line>434</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -534,19 +545,64 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
-          <line>206</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/FA_DEMO2.py</url>
-          <line>123</line>
+          <line>119</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/FA_DEMO2.py</url>
-          <line>122</line>
+          <line>118</line>
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ans1/ans1_nb_lr_rf.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>344</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>343</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>336</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>331</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/answer4/BBC Classification.py</url>
+          <line>333</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FA_DEMO3.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FA_DEMO2.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FA_DEMO2.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -559,19 +615,22 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df" />
         <watch expression="X" />
-        <watch expression="X_v" />
+        <watch expression="X.shape" language="Python" />
+        <watch expression="X_train.shape" language="Python" />
+        <watch expression="X_v.shape" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ml_text_Dem1$ans1_nb_lr_rf.coverage" NAME="ans1_nb_lr_rf Coverage Results" MODIFIED="1601340041858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans1" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$ans2_flair.coverage" NAME="ans2_flair Coverage Results" MODIFIED="1600308645992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans2" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$ans2_Source.coverage" NAME="ans2_Source Coverage Results" MODIFIED="1600322124353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans2" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$notebook7d2b6a9283_prac.coverage" NAME="notebook7d2b6a9283_prac Coverage Results" MODIFIED="1600415241007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans3" />
+    <SUITE FILE_PATH="coverage/ml_text_Dem1$FA_DEMO3.coverage" NAME="FA_DEMO3 Coverage Results" MODIFIED="1601343922378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$ans2_fair_source.coverage" NAME="ans2_fair_source Coverage Results" MODIFIED="1600308888354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ans1" />
-    <SUITE FILE_PATH="coverage/ml_text_Dem1$BBC_Classification.coverage" NAME="BBC Classification Coverage Results" MODIFIED="1601261155842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/answer4" />
-    <SUITE FILE_PATH="coverage/ml_text_Dem1$FA_DEMO2.coverage" NAME="FA_DEMO2 Coverage Results" MODIFIED="1601284648576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ml_text_Dem1$BBC_Classification.coverage" NAME="BBC Classification Coverage Results" MODIFIED="1601341227011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/answer4" />
+    <SUITE FILE_PATH="coverage/ml_text_Dem1$FA_DEMO2.coverage" NAME="FA_DEMO2 Coverage Results" MODIFIED="1601344304732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ml_text_Dem1$test.coverage" NAME="test Coverage Results" MODIFIED="1600733700862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/answer4" />
   </component>
   <component name="debuggerHistoryManager">
@@ -584,17 +643,32 @@
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>defaultdictf[TITLE].values</expression-string>
+        <expression-string>X_v.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[1]</expression-string>
+        <expression-string>X_train.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[0]</expression-string>
+        <expression-string>X.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>verify_tfidf.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>input_tfidf.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>df.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -604,32 +678,17 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>story_tfidf[0]</expression-string>
+        <expression-string>story_tfidf_ngram.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>values['document_id']</expression-string>
+        <expression-string>story_tfidf.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df.text.shape[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>df.text.shape</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>df.text</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>df</expression-string>
+        <expression-string>story_bow.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -671,9 +730,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/answer4/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/opt/anaconda3/envs/py37_t1x/lib/python3.7/site-packages/sklearn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/ans3/notebook7d2b6a9283_prac.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="-1044">
           <caret line="85" selection-start-line="85" selection-end-line="85" selection-end-column="55" />
           <folding>
             <element signature="e#59#77#0" expanded="true" />
@@ -681,19 +753,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5287">
-          <caret line="311" column="19" selection-start-line="311" selection-start-column="19" selection-end-line="311" selection-end-column="19" />
-          <folding>
-            <element signature="e#459#477#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ans2/ans2_flair.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3740">
+        <state relative-caret-position="882">
           <caret line="220" selection-start-line="220" selection-end-line="220" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -703,28 +765,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ans1/ans1_nb_lr_rf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+        <state relative-caret-position="174">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="28" />
           <folding>
             <element signature="e#133#144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answer4/test.py">
+    <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="100">
+          <caret line="321" column="25" selection-start-line="321" selection-start-column="25" selection-end-line="321" selection-end-column="25" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#459#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FA_DEMO3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="98" column="3" lean-forward="true" selection-start-line="98" selection-end-line="98" selection-end-column="12" />
+          <folding>
+            <element signature="e#40#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FA_DEMO2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
+        <state relative-caret-position="310">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
           <folding>
             <element signature="e#36#45#0" expanded="true" />
           </folding>

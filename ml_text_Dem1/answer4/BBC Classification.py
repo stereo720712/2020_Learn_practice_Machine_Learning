@@ -45,6 +45,53 @@ TEXT = 'text'
 TITLE = 'title'
 STORY = 'story'
 
+
+def clean_text(text):
+    # decontraction: https://stackoverflow.com/a/47091490/7445772
+    # specific
+    text =re.sub(r"won\'t", "will not", text)
+    text = re.sub(r"can\'t", 'can not', text)
+
+    #general
+    text = re.sub(r"n\'t", 'not', text)
+    text = re.sub(r"\'re", "are", text)
+    text = re.sub(r"\'s", "is", text)
+    text = re.sub(r"\'d", " would", text)
+    text = re.sub(r"\'ll", " will", text)
+    text = re.sub(r"\'t", " not", text)
+    text = re.sub(r"\'ve", " have", text)
+    text = re.sub(r"\'m", " am", text)
+
+    # remove line breaks  \r \n \t remove from string
+    text = text.replace('\\r', ' ')
+    text = text.replace('\\"', ' ')
+    text = text.replace('\\t', ' ')
+    text = text.replace('\\n', ' ')
+
+    # remove stop words
+    text = ' '.join(word for word in text.split() if word not in stopwords)
+
+    # remove special words
+    text = re.sub('[^A-Za-z0-9]+', " ", text)
+    text = text.lower()
+    return text
+
+def show_confusion_matrix(prediction, y_test):
+    # https://stackoverflow.com/a/48018785/7445772
+    labels = ['tech','sport', 'business','entertainment','politics']
+    cm = confusion_matrix(y_test, prediction, idx) #?? idx ?
+    print(cm)
+    ax = plt.subplot()
+    sns.heatmap(cm, annot=True, ax=ax)  #annot=True to annotate cells
+    # labels, title and ticks
+    ax.set_xlabel('Predicted labels');
+    ax.set_ylabel('True labels');
+    ax.set_title('Confusion Matrix');
+    ax.xaxis.set_ticklabels(labels, rotation=90);
+    ax.yaxis.set_ticklabels(labels[::-1], rotation=90);
+    plt.title('Confusion matrix of the classifier')
+    plt.show()
+
 # Reading data into Dataframes for easy overview of data and subsequent processing
 
 frame = defaultdict(list)
@@ -204,35 +251,6 @@ for idx in sample:
 stopwords = stopwords.words('english')
 print(stopwords)
 
-def clean_text(text):
-    # decontraction: https://stackoverflow.com/a/47091490/7445772
-    # specific
-    text =re.sub(r"won\'t", "will not", text)
-    text = re.sub(r"can\'t", 'can not', text)
-
-    #general
-    text = re.sub(r"n\'t", 'not', text)
-    text = re.sub(r"\'re", "are", text)
-    text = re.sub(r"\'s", "is", text)
-    text = re.sub(r"\'d", " would", text)
-    text = re.sub(r"\'ll", " will", text)
-    text = re.sub(r"\'t", " not", text)
-    text = re.sub(r"\'ve", " have", text)
-    text = re.sub(r"\'m", " am", text)
-
-    # remove line breaks  \r \n \t remove from string
-    text = text.replace('\\r', ' ')
-    text = text.replace('\\"', ' ')
-    text = text.replace('\\t', ' ')
-    text = text.replace('\\n', ' ')
-
-    # remove stop words
-    text = ' '.join(word for word in text.split() if word not in stopwords)
-
-    # remove special words
-    text = re.sub('[^A-Za-z0-9]+', " ", text)
-    text = text.lower()
-    return text
 
 processed_titles = []
 for title in tqdm(df[TITLE].values):
@@ -320,21 +338,6 @@ print(type(category_onehot), type(X_bow))
 
 # Data Mdoeling
 
-def show_confusion_matrix(prediction, y_test):
-    # https://stackoverflow.com/a/48018785/7445772
-    labels = ['tech','sport', 'business','entertainment','politics']
-    cm = confusion_matrix(y_test, prediction, idx) #?? idx ?
-    print(cm)
-    ax = plt.subplot()
-    sns.heatmap(cm, annot=True, ax=ax)  #annot=True to annotate cells
-    # labels, title and ticks
-    ax.set_xlabel('Predicted labels');
-    ax.set_ylabel('True labels');
-    ax.set_title('Confusion Matrix');
-    ax.xaxis.set_ticklabels(labels, rotation=90);
-    ax.yaxis.set_ticklabels(labels[::-1], rotation=90);
-    plt.title('Confusion matrix of the classifier')
-    plt.show()
 
 
 # Use bow vectors

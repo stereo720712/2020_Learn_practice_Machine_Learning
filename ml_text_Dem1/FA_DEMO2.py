@@ -27,33 +27,7 @@ TITLE = 'title' # remove this element for the demo
 INPUT = 'input'
 LABEL = 'label'
 
-# READ Data from text
-frame = defaultdict(list)
-for dir_name, _, file_names in os.walk(DATA_DIR):
-    try:
-        file_names.remove('README.TXT')
-        file_names.remove('.DS_Store')
-    except:
-        pass
-    for file_name in file_names:
-        frame[LABEL].append(os.path.basename(dir_name))
-        name = os.path.splitext(file_name)[0]
-        frame[DOCUMENT_ID].append(name)
-        path = os.path.join(dir_name, file_name)
-        with open(path,'r', encoding='unicode_escape') as file:
-            frame[INPUT].append(file.read())
-df = pd.DataFrame.from_dict(frame)
 
-# DATA Encoding
-
-# LABEL
-df[LABEL].unique()
-label_encoder = LabelEncoder()
-y = label_encoder.fit_transform(df[LABEL].values)
-y
-
-
-# TEXT
 nltk.download('stopwords')
 stopword_e = stopwords.words('english')
 def clean_text(text):
@@ -86,6 +60,33 @@ def clean_text(text):
     text = text.lower()
     return text
 
+# READ Data from text
+frame = defaultdict(list)
+for dir_name, _, file_names in os.walk(DATA_DIR):
+    try:
+        file_names.remove('README.TXT')
+        file_names.remove('.DS_Store')
+    except:
+        pass
+    for file_name in file_names:
+        frame[LABEL].append(os.path.basename(dir_name))
+        name = os.path.splitext(file_name)[0]
+        frame[DOCUMENT_ID].append(name)
+        path = os.path.join(dir_name, file_name)
+        with open(path,'r', encoding='unicode_escape') as file:
+            frame[INPUT].append(file.read())
+df = pd.DataFrame.from_dict(frame)
+
+# DATA Encoding
+
+# LABEL
+df[LABEL].unique()
+label_encoder = LabelEncoder()
+y = label_encoder.fit_transform(df[LABEL].values)
+y
+
+
+# TEXT
 input_processed = []
 for txt in tqdm(df[INPUT].values):
     txt_p = clean_text(txt)
@@ -95,7 +96,7 @@ for txt in tqdm(df[INPUT].values):
 text_transformer = TfidfVectorizer(min_df=2)
 X = text_transformer.fit_transform(input_processed)
 X = X.toarray()
-X_train, X_test, y_train, y_test =train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # Model trtain
 model = linear_model.LogisticRegression(max_iter=10000)
@@ -110,13 +111,8 @@ vframe = defaultdict(list)
 with open('varify.txt','r', encoding='unicode_escape')as file:
     vframe['txt'].append(file.read())
 vdf = pd.DataFrame.from_dict(vframe)
-v_input = []
-for txt in vdf['txt']:
-    txt_p = clean_text(txt)
-    for i in range(2225):
-        v_input.append(txt_p)
-X_v = text_transformer.fit_transform(v_input)
-X_v = X_v.toarray()
+X_v = text_transformer.transform(vdf['txt'])
+
 
 print(X_v)
 
