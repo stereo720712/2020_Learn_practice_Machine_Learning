@@ -95,11 +95,11 @@ for txt in tqdm(df[INPUT].values):
 
 #Vect.
 text_transformer = TfidfVectorizer(min_df=2)
-# X = text_transformer.fit_transform(input_processed)
-# X = X.toarray()
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X = text_transformer.fit_transform(input_processed)
+X = X.toarray()
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-# Model trtain
+#Model trtain
 
 model = joblib.load('LR_model')
 #lr_prediction = model.predict(X_test)

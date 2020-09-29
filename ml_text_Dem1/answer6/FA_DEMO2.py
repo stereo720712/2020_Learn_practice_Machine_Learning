@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import linear_model
 import joblib
 from sklearn.metrics import accuracy_score, confusion_matrix
-DATA_DIR = os.sep.join(['bbc_news_Data','bbc-fulltext (document classification)','bbc'])
+DATA_DIR = os.sep.join(['..','bbc_news_Data','bbc-fulltext (document classification)','bbc'])
 CATEGORY = 'category'
 DOCUMENT_ID = 'document_id'
 # TEXT = 'text'
@@ -102,6 +102,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 model = linear_model.LogisticRegression(max_iter=10000)
 model.fit(X_train, y_train)
 joblib.dump(model,'LR_model')
+# https://www.kaggle.com/mattwills8/fit-transform-and-save-tfidfvectorizer
+# need to save the transform
+
 #model = joblib.load('LR_model')
 #lr_prediction = model.predict(X_test)
 #print('accurancy: ',accuracy_score(lr_prediction,y_test))
