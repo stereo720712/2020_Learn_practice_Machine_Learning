@@ -11,11 +11,17 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import matplotlib.pyplot as plt
 from collections import defaultdict
+import seaborn as sns
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn import linear_model
+import pickle
 
 CATEGORY = 'category'
 DOCUMENT_ID = 'document_id'
 TITLE = 'title'
-INPUT = 'input'
+STORY = 'story'
 LABEL = 'label'
 
 class MLDemo1CL(object):
@@ -27,7 +33,16 @@ class MLDemo1CL(object):
         self._stopword_e = stopwords.words("english")
         self.DATA_DIR = os.sep.join(['..','bbc_news_Data', 'bbc-fulltext (document classification)', 'bbc'])
         self.df = None
-        self.vdf = None
+        self.label_encoder = LabelEncoder()
+        self.vectorizer = TfidfVectorizer(min_df=3)
+        self.X = None
+        self.y = None
+        self.X_train = None
+        self.y_train = None
+        self.X_test = None
+        self.y_test = None
+
+
 
     def clean_text(self, text):
           # decontraction: https://stackoverflow.com/a/47091490/7445772
@@ -59,8 +74,8 @@ class MLDemo1CL(object):
           text = text.lower()
           return text
 
-    def plot_wordcloud(text, mask=None, max_words=200, max_font_size=100,
-                     figure_size=(24.0, 16.0), title=None, title_size=40, image_color=False):
+    def plot_wordcloud(text, mask=None, max_words=20000, max_font_size=100,
+                     figure_size=(30.0, 24.0), title=None, title_size=40, image_color=False):
 
           stopwords = set(STOPWORDS)  # ?
           more_stopwords = {'one', 'br', 'Po', 'th', 'sayi', 'fo', 'Unknown'}
@@ -71,8 +86,8 @@ class MLDemo1CL(object):
                                 max_words=max_words,
                                 max_font_size=max_font_size,
                                 random_state=42,
-                                width=800,
-                                height=400,
+                                width=1024,
+                                height=768,
                                 mask=mask)
           wordcloud.generate(str(text))
 
@@ -99,32 +114,55 @@ class MLDemo1CL(object):
             except:
                 pass
             for file_name in file_names:
-                frame[LABEL].append(os.path.basename(dir_name))
+                frame[CATEGORY].append(os.path.basename(dir_name))
                 name = os.path.splitext(file_name)[0]
                 frame[DOCUMENT_ID].append(name)
                 path = os.path.join(dir_name, file_name)
                 with open(path, 'r',encoding='unicode_escape') as file:
-                    frame[INPUT].append(file.read())
+                    frame[STORY].append(file.read())
         self.df = pd.DataFrame.from_dict(frame)
 
 
-    def showSourceData(self):
-        ''' show the source data frame'''
-        print(self.df.head(6))
+    def showSourceData_nb(self):
+        ''' show the source data frame in notebook'''
+        self.df.head(6)
 
     def showSourceDataCountGraph(self):
         '''show the source data count at every category'''
-        pass
+        if self.df is None:
+            print('Loading data...')
+            self.loadData()
+        ax = sns.countplot(self.df[CATEGORY])
+        title_obj = plt.title('Number of documents in each  category')
+        plt.getp(title_obj)  # print out the properties of title
+        plt.getp(title_obj, 'text')  # print out the 'text' property for title
+        plt.setp(title_obj, color='g')  # set the color of title to red
+        plt.savefig('category.png')
+        plt.show()
+
+
+
     def showWordFashionGraph(self):
         '''word_~~ cloud'''
-        pass
+        if self.df is None:
+            print('Loading data...')
+            self.loadData()
+        x = self.df.story[0]
+        self.plot_wordcloud(self.df[self.df[CATEGORY] == 'sport'][STORY], title='STORY  WORD SHOW')
     def data_process(self):
         '''label , input , show processing'''
-        pass
+        self.y = self.label_encoder.fit_transform(self.df[CATEGORY].values)
+        self.df[STORY] = self.df[STORY].apply(lambda x: self.clean_text(x))
+        self.X = self.vectorizer.fit_transform(self.df[STORY])
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y,test_size=0.2)
+
+        print(self.X[0])
 
     def model_train(self):
         '''traiing model'''
-        pass
+        model = linear_model.LogisticRegression(max_iter=20000)
+        model.fit(self.X_train, self.y_train)
+        pickle.dump(model,open('lr_model','wb'))
 
     def model_test(self):
           ''' show test predict result'''
@@ -132,3 +170,15 @@ class MLDemo1CL(object):
     def show_confusion_matrix(prediction, y_test):
           '''from bbc classificaiton, wait for find data to show'''
           pass
+    def predict(self, file_path):
+      '''load txt file and show result'''
+      vframe = defaultdict(list)
+      with open(file_path,'r',encoding='unicode_escape') as file:
+          vframe['txt'].append(file.read())
+      vdf = pd.DataFrame.from_dict(vframe)
+      vdf['txt'] = vdf['txt'].apply(lambda x: self.clean_text(x))
+      X_v = self.vectorizer.transform(vdf['txt'])
+      model = pickle.load(open('lr_model','rb'))
+      res = model.predict(X_v)
+      print('預測結果是： ' , self.label_encoder.inverse_transform(res))
+

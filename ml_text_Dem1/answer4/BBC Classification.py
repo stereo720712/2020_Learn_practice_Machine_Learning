@@ -160,14 +160,14 @@ print(df.head(2))
 ax = sns.countplot(df.category)
 title_obj = plt.title('Number of documents in each  category')
 #
-# ax.xaxis.label.set_color("green")
-# ax.tick_params(axis='x', colors='green')
-# ax.yaxis.label.set_color("green")
-# ax.tick_params(axis='y', colors='green')
-# plt.getp(title_obj)                    #print out the properties of title
-# plt.getp(title_obj, 'text')            #print out the 'text' property for title
-# plt.setp(title_obj, color='g')         #set the color of title to red
-# plt.savefig('category.png')
+ax.xaxis.label.set_color("green")
+ax.tick_params(axis='x', colors='green')
+ax.yaxis.label.set_color("green")
+ax.tick_params(axis='y', colors='green')
+plt.getp(title_obj)                    #print out the properties of title
+plt.getp(title_obj, 'text')            #print out the 'text' property for title
+plt.setp(title_obj, color='g')         #set the color of title to red
+plt.savefig('category.png')
 plt.show()
 
 # Univariate Analysis Title
