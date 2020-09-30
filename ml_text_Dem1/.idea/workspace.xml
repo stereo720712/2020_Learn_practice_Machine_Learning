@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66779e58-3263-4228-9b69-6715fad54236" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/classify/data/dev.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/classify/data/dev.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/classify/data/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/classify/data/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ans2/classify/data/train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ans2/classify/data/train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer4/BBC Classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer4/BBC Classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer4/category.png" beforeDir="false" afterPath="$PROJECT_DIR$/answer4/category.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer6/FA_DEMO4.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer6/FA_DEMO4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer6/LR_model" beforeDir="false" afterPath="$PROJECT_DIR$/answer6/LR_model" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/answer6/MLDemo1CL.py" beforeDir="false" afterPath="$PROJECT_DIR$/answer6/MLDemo1CL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer6/varify.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/answer6/category.png" beforeDir="false" afterPath="$PROJECT_DIR$/answer6/category.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,49 +26,15 @@
     <select />
   </component>
   <component name="DockManager">
-    <window id="3">
+    <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/answer4/BBC Classification.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="323">
-                    <caret line="234" column="7" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
-                    <folding>
-                      <element signature="e#459#477#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
+          <leaf>
             <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO2.py">
+              <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO4.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="596">
-                    <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-                    <folding>
-                      <element signature="e#36#45#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO3.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-806" />
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/ans2/ans2_Source.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="394">
-                    <caret line="179" column="12" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="12" />
-                    <folding>
-                      <element signature="e#232#267#0" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="340">
+                    <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="24" />
                   </state>
                 </provider>
               </entry>
@@ -91,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/answer6/MLDemo1CL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="171" column="14" lean-forward="true" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
+            <state relative-caret-position="246">
+              <caret line="164" column="48" lean-forward="true" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
               <folding>
                 <element signature="e#49#58#0" expanded="true" />
               </folding>
@@ -103,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO4.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="340">
+              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -169,8 +127,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="855" />
-    <option name="y" value="123" />
+    <option name="x" value="751" />
+    <option name="y" value="168" />
     <option name="width" value="1694" />
     <option name="height" value="1005" />
   </component>
@@ -394,23 +352,24 @@
       <workItem from="1601284512049" duration="274000" />
       <workItem from="1601284974463" duration="430000" />
       <workItem from="1601339785963" duration="16212000" />
-      <workItem from="1601425374646" duration="6941000" />
+      <workItem from="1601425374646" duration="8369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97382000" />
+    <option name="totallyTimeSpent" value="98810000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="855" y="123" width="1694" height="1005" extended-state="0" />
+    <frame x="751" y="168" width="1694" height="1005" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6510791" visible="true" weight="0.17675544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6510791" visible="true" weight="0.17675544" />
       <window_info id="Structure" order="1" sideWeight="0.34892085" side_tool="true" visible="true" weight="0.17675544" />
       <window_info id="Favorites" order="2" sideWeight="0.50086653" side_tool="true" weight="0.10752688" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49939469" weight="0.32968238" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8159806" visible="true" weight="0.39101863" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8159806" visible="true" weight="0.39101863" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -809,33 +768,40 @@
         <state relative-caret-position="-806" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/answer6/category.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="478">
+          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           <folding>
             <element signature="e#36#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answer6/category.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/answer6/MLDemo1CL.py">
+    <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="171" column="14" lean-forward="true" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
-          <folding>
-            <element signature="e#49#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/answer6/FA_DEMO4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/answer6/MLDemo1CL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="164" column="48" lean-forward="true" selection-start-line="164" selection-start-column="48" selection-end-line="164" selection-end-column="48" />
+          <folding>
+            <element signature="e#49#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

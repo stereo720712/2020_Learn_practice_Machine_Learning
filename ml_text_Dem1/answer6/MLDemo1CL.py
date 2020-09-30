@@ -121,11 +121,11 @@ class MLDemo1CL(object):
                 with open(path, 'r',encoding='unicode_escape') as file:
                     frame[STORY].append(file.read())
         self.df = pd.DataFrame.from_dict(frame)
-
+        print('Loading data finish')
 
     def showSourceData_nb(self):
         ''' show the source data frame in notebook'''
-        self.df.head(6)
+        self.df.head()
 
     def showSourceDataCountGraph(self):
         '''show the source data count at every category'''
