@@ -18,7 +18,7 @@ if __name__ == '__main__':
     mlDemo.data_process()
 
     #model training
-   # mlDemo.model_train()
+    mlDemo.model_train()
 
     # model test for confusion matrix
     mlDemo.model_test()

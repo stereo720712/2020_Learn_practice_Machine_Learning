@@ -184,7 +184,7 @@ class MLDemo1CL(object):
         '''traiing model'''
         model = linear_model.LogisticRegression(max_iter=20000)
         model.fit(self.X_train, self.y_train)
-        pickle.dump(model,open('lr_model','wb'))
+        pickle.dump(model,open('lr_model', 'wb'))
 
     def model_test(self):
         ''' show test predict result'''
