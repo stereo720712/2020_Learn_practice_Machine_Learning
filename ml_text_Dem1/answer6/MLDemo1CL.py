@@ -152,10 +152,13 @@ class MLDemo1CL(object):
     def data_process(self):
         '''label , input , show processing'''
         self.y = self.label_encoder.fit_transform(self.df[CATEGORY].values)
+        # save
+        pickle.dump(self.label_encoder, open('label_encoder','wb'))
+
         self.df[STORY] = self.df[STORY].apply(lambda x: self.clean_text(x))
         self.X = self.vectorizer.fit_transform(self.df[STORY])
+        pickle.dump(self.vectorizer,open('vectorizer','wb'))
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.X, self.y,test_size=0.2)
-
         print(self.X[0])
 
     def model_train(self):
@@ -165,7 +168,9 @@ class MLDemo1CL(object):
         pickle.dump(model,open('lr_model','wb'))
 
     def model_test(self):
-          ''' show test predict result'''
+        ''' show test predict result'''
+        model = pickle.load(open('lr_model', 'rb'))
+        res = model.predict()
 
     def show_confusion_matrix(prediction, y_test):
           '''from bbc classificaiton, wait for find data to show'''
