@@ -17,7 +17,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn import linear_model
 import pickle
-
+from sklearn.metrics import accuracy_score, confusion_matrix
 CATEGORY = 'category'
 DOCUMENT_ID = 'document_id'
 TITLE = 'title'
@@ -41,7 +41,7 @@ class MLDemo1CL(object):
         self.y_train = None
         self.X_test = None
         self.y_test = None
-
+        self.y_test_predict = None
 
 
     def clean_text(self, text):
@@ -103,6 +103,25 @@ class MLDemo1CL(object):
 
           plt.axis('off')
           plt.tight_layout()
+
+    def show_confusion_matrix(self, prediction, y_test):
+        # https://stackoverflow.com/a/48018785/7445772
+        labels = ['tech', 'sport', 'business', 'entertainment', 'politics']
+       # cm = confusion_matrix(y_test, prediction, idx)  # ?? idx ?
+        cm = confusion_matrix(y_test,prediction)
+        print(cm)
+        ax = plt.subplot()
+        sns.heatmap(cm, annot=True, ax=ax)  # annot=True to annotate cells
+        # labels, title and ticks
+        ax.set_xlabel('Predicted labels');
+        ax.set_ylabel('True labels');
+        ax.set_title('Confusion Matrix');
+        ax.xaxis.set_ticklabels(labels, rotation=90);
+        ax.yaxis.set_ticklabels(labels[::-1],rotation=0);
+        #ax.yaxis.set_rotation(0)
+
+        plt.title('Confusion matrix of the classifier')
+        plt.show()
 
     def loadData(self):
         '''load data from text file and return dataframe '''
@@ -170,11 +189,13 @@ class MLDemo1CL(object):
     def model_test(self):
         ''' show test predict result'''
         model = pickle.load(open('lr_model', 'rb'))
-        res = model.predict()
+        self.y_test_predict = model.predict(self.X_test)
+        print(self.label_encoder.inverse_transform(self.y_test_predict))
 
-    def show_confusion_matrix(prediction, y_test):
-          '''from bbc classificaiton, wait for find data to show'''
-          pass
+    def show_confusion_matrix_demo(self):
+        '''from bbc classificaiton, wait for find data to show '''
+        self.show_confusion_matrix(self.y_test_predict, self.y_test)
+
     def predict(self, file_path):
       '''load txt file and show result'''
       vframe = defaultdict(list)
